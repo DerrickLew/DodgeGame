@@ -1,0 +1,10 @@
+C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\bin\Release\DodgeGame.exe.config
+C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\bin\Release\DodgeGame.exe
+C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\bin\Release\DodgeGame.pdb
+C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\obj\x86\Release\DodgeGame.MainScreen.resources
+C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\obj\x86\Release\DodgeGame.Properties.Resources.resources
+C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\obj\x86\Release\DodgeGame.exe
+C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\obj\x86\Release\DodgeGame.pdb
