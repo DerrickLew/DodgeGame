@@ -9,10 +9,11 @@ namespace DodgeGame
 {
     class FallingObjects : GameObject
     {
-        public int fo_minvel;
-        public float fo_yvel;
-        public Bitmap fo_nor;
-        
+        public int fo_minvel;                             //minimum velocity falling object should fall
+        public float fo_yvel;                             //falling objects Y velocity speed
+        public Bitmap fo_nor;                            //Image for falling object
+
+        //set attributes to a player instance
         public FallingObjects(int gameWidth, int gameHeight,Random objectrandom, Bitmap image)
         {
             this.go_minXborder = 50;

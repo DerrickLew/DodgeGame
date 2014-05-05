@@ -8,19 +8,22 @@ namespace DodgeGame
 {
     class Player : GameObject
     {
-        public float player_xvel;
-        public Bitmap player_nor;
-        public Bitmap player_left, player_right;
+        public float player_xvel;                          //players movement speed set the a certain value not something you really want to change, leave for now  
+        public Bitmap player_nor;                          // image used for player normal state
+        public Bitmap player_left, player_right;          // image used for player left and righ
+        public int player_index;                          // track what player is used
         
-
-        public Player(int gameWidth, int gameHeight, Random playerrandom,Bitmap imagenor, Bitmap imageleft, Bitmap imageright)
+        
+        //set attributes to a player instance
+        public Player(int gameWidth, int gameHeight,int playerind, int width,int height, Random playerrandom,Bitmap imagenor, Bitmap imageleft, Bitmap imageright)
         {
             this.go_minXborder = 15;
             this.go_minYborder = 50;
-            this.go_w = 80;
-            this.go_h = 80;
+            this.go_w = width;
+            this.go_h = height;
             this.go_x = playerrandom.Next(this.go_minXborder, (gameWidth) - (int.Parse(this.go_w.ToString()) + this.go_minXborder));
             this.go_y = gameHeight - this.go_h - this.go_minYborder;
+            player_index = playerind;
             player_xvel = 10;
             player_nor = imagenor;
             player_nor.MakeTransparent(Color.White);
@@ -31,12 +34,13 @@ namespace DodgeGame
             this.go_state = player_nor;     
         }
 
+        //Return back to normal state
         public void Returnstate()
         {
             this.go_state = player_nor;
         }
 
-
+        //Method used to move player left and right
         public void ControlledHMove(bool left, bool right, int gameWidth, int gameHeight)
         {
             if (this.go_x < this.go_minXborder)
