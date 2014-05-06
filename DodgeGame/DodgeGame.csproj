@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameObject.cs" />
+    <Compile Include="ICollidable.cs" />
+    <Compile Include="IMove.cs" />
+    <Compile Include="IVisible.cs" />
     <Compile Include="Mainscreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FallingObjects.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="GlobalVariables.cs" />
     <EmbeddedResource Include="Mainscreen.resx">
       <DependentUpon>Mainscreen.cs</DependentUpon>
     </EmbeddedResource>

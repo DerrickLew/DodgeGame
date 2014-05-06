@@ -10,49 +10,22 @@ namespace DodgeGame
     class FallingObjects : GameObject
     {
         public int fo_minvel;                             //minimum velocity falling object should fall
-        public float fo_yvel;                             //falling objects Y velocity speed
-        public Bitmap fo_nor;                            //Image for falling object
-
-        //set attributes to a player instance
-        public FallingObjects(int gameWidth, int gameHeight,Random objectrandom, Bitmap image)
+        
+        //set attributes to a falling object instance
+        public FallingObjects(int gameWidth, int gameHeight, int width, int height, Random objectrandom, Bitmap image)
+            : base(new Visible(), new AutoVMove(), new FallingObjectCollisions())
         {
             this.go_minXborder = 50;
-            this.go_minYborder = 20;
-            this.go_w = 20;
-            this.go_h = 20;
-            this.go_x = objectrandom.Next(this.go_minXborder, (gameWidth) - (int.Parse(this.go_w.ToString()) + this.go_minXborder));       //Randomize X Position 
+            this.go_minYborder = 30;
+            this.go_w = width;
+            this.go_h = height;
+            this.go_x = objectrandom.Next(this.go_minXborder, (gameWidth) - (int.Parse(this.go_w.ToString()) + this.go_minXborder));      //Randomize X Position 
             this.go_y = objectrandom.Next(gameHeight) / 4;                                                                                //Randomize Y Postion, start it roughly at the top quarter of the screen
             fo_minvel = 3;
-            fo_yvel = objectrandom.Next(8) + fo_minvel;                                                                                  //Randomize Y Speed at least contains minimum velocity 
-            fo_nor = image;
-            fo_nor.MakeTransparent(Color.White);
-            this.go_state = fo_nor;
-        }
-
-        //Method to Move object Vertically Automatically
-        //Create next object 
-        public void AutoVMove(int gameWidth, int gameHeight)
-        {
-            if (this.go_y < 0)
-            {
-                NextObject(gameWidth, gameHeight);
-            }
-
-            if (this.go_y > (gameHeight - this.go_minYborder))
-            {
-                NextObject(gameWidth, gameHeight);
-            }
-
-            this.go_y += fo_yvel;
-        }
-
-
-        //Method to Create new object once at the bottom of the screen   
-        private void NextObject(int gameWidth, int gameHeight)
-        {
-            Random r = new Random();
-            this.go_x = r.Next(go_minXborder, (gameWidth) - (int.Parse(this.go_w.ToString()) + this.go_minXborder));
-            this.go_y = r.Next(gameHeight) / 4;
+            this.go_yvel = objectrandom.Next(8) + fo_minvel;                                                                              //Randomize Y Speed at least contains minimum velocity 
+            this.go_nor = image;
+            this.go_nor.MakeTransparent(Color.White);
+            this.go_state = this.go_nor;
         }
     }
 }
