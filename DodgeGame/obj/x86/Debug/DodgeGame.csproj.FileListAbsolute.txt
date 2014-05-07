@@ -14,5 +14,4 @@ D:\Users\f5238684\Documents\Visual Studio 2010\Projects\Games\DodgeGame\DodgeGam
 D:\Users\f5238684\Documents\Visual Studio 2010\Projects\Games\DodgeGame\DodgeGame\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\Users\f5238684\Documents\Visual Studio 2010\Projects\Games\DodgeGame\DodgeGame\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\bin\Debug\DodgeGame.exe.config
-C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\obj\x86\Debug\DodgeGame.csprojResolveAssemblyReference.cache
 C:\Users\Strider\documents\visual studio 2010\Projects\Games\DodgeGame\DodgeGame\obj\x86\Debug\DodgeGame.csproj.GenerateResource.Cache

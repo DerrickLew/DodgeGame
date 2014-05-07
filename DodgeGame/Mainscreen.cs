@@ -13,7 +13,7 @@ namespace DodgeGame
 {
     public partial class MainScreen : Form
     {
-        private const int fps = 60;                                           //FPS per second for loop
+        private const int fps = 65;                                           //FPS per second for loop
         private const int maxfallobjs1 = 13;                                  //number of the same falling objects
         private const int scoreinterval = 10;                                 //used to slow score speed
         private int scoretimer;                                               //used in conjuction with score interval  
@@ -98,7 +98,7 @@ namespace DodgeGame
                 }
                 //Refreshes the actions
                 this.Invalidate();
-                //Prevents the game from running too fast set to 60 fps
+                //Prevents the game from running too fast set to 65 fps
                 Thread.Sleep(1000 / fps);
             }
             
